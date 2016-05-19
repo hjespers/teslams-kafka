@@ -1,0 +1,88 @@
+{
+  "namespace": "teslams",
+  "type": "record",
+  "name": "streamdata",
+  "fields": [
+    {
+      "name": "id_s",
+      "type": "string"
+    },
+    {
+      "name": "vehicle_id",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "name": "speed",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "odometer",
+      "type": "float"
+    },
+    {
+      "name": "soc",
+      "type": "int"
+    },
+    {
+      "name": "elevation",
+      "type": "int"
+    },
+    {
+      "name": "est_heading",
+      "type": "int"
+    },
+    {
+      "name": "est_lat",
+      "type": "float"
+    },
+    {
+      "name": "est_lng",
+      "type": "float"
+    },
+    {
+      "name": "power",
+      "type": "int"
+    },
+    {
+      "name": "shift_state",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "SSType",
+          "symbols": [
+            "P",
+            "D",
+            "R"
+          ]
+        }
+      ],
+      "doc": "the current shift state of the car",
+      "symbolDocs": {
+        "P": "Parked",
+        "D": "Drive",
+        "R": "Reverse",
+        "null": "Not Provided"
+      }
+    },
+    {
+      "name": "range",
+      "type": "int"
+    },
+    {
+      "name": "est_range",
+      "type": "int"
+    },
+    {
+      "name": "heading",
+      "type": "int"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{ "namespace": "teslams",
+  "type": "record",
+  "name": "gui_data",
+  "fields": [
+    {
+        "name": "gui_temperature_units",
+        "type": {
+            "type": "enum",
+            "name": "TempUnits",
+            "symbols": [
+                "F",
+                "C"
+            ]
+        },
+        "doc": "temperature units",
+        "symbolDocs": {
+            "F": "Fahrenheit",
+            "C": "Celsius"
+        }
+    },
+    {
+      "name": "gui_charge_rate_units",
+      "type": {
+            "type": "enum",
+            "name": "ChargeRateUnits",
+            "symbols": [
+                "mi/hr",
+                "km/hr"
+            ]
+        },
+        "doc": "charge rate units of measure",
+        "symbolDocs": {
+            "mi/hr": "miles of range added per hour",
+            "km/hr": "kilometers of range added per hour"
+        }            
+    },
+    {
+        "name": "gui_24_hour_time",
+        "type": "boolean"
+    },
+    {
+      "name": "gui_range_display",
+      "type": {
+            "type": "enum",
+            "name": "RangeAlgo",
+            "symbols": [
+                "Rated",
+                "Ideal"
+            ]
+        },
+        "doc": "range estimation algorithm",
+        "symbolDocs": {
+            "Rated": "rated range",
+            "Ideal": "ideal range"
+        }            
+    }
+  ]
+}
