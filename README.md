@@ -46,13 +46,13 @@ By default the output is a stream of AVRO formatted messages published to a Kafk
 
 To execute run:
 
-	streaming -u <username> -p <password> 
+	kstreaming -u <username> -p <password> 
 
 For help run :
 
-	streaming --help
+	kstreaming --help
 
-	Usage: node ./streaming -u <username> -p <password> [--file <filename>] [--db <MongoDB database>] [--values <value_list>] [--silent]
+	Usage: kstreaming -u <username> -p <password> [--topic <topic_name>] [--silent]
 
 	Options:
 		  -u, --username  Teslamotors.com login                  [required]
