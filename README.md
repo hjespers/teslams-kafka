@@ -37,8 +37,6 @@ In addition to putting your password as a command line option or a file, you can
 
 #kstreaming.js - Capture and log real-time telemetry to Apache Kafka for analytics 
 
-<img src=http://farm9.staticflickr.com/8241/8526534730_75643b3247_c.jpg>
-
 An application which uses the TESLA HTTP Long Polling "STREAMING" API to get continuous telemetry from the Tesla Model S. 
 A valid teslamotors.com login and password is required and must be provided on the command line options. 
 
