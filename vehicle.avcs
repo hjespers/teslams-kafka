@@ -1,0 +1,98 @@
+{ "schema": 
+    "{  "namespace": "teslams",
+        "type": "record",
+        "name": "gui_data",
+        "fields": "[
+            {
+                "name": "gui_temperature_units",
+                "type": {
+                    "type": "enum",
+                    "name": "TempUnits",
+                    "symbols": [
+                        "F",
+                        "C"
+                    ]
+                },
+                "doc": "temperature units",
+                "symbolDocs": {
+                    "F": "Fahrenheit",
+                    "C": "Celsius"
+                }
+            },
+            {
+              "name": "gui_charge_rate_units",
+              "type": {
+                    "type": "enum",
+                    "name": "ChargeRateUnits",
+                    "symbols": [
+                        "mi/hr",
+                        "km/hr"
+                    ]
+                },
+                "doc": "charge rate units of measure",
+                "symbolDocs": {
+                    "mi/hr": "miles of range added per hour",
+                    "km/hr": "kilometers of range added per hour"
+                }            
+            },
+            {
+                "name": "gui_24_hour_time",
+                "type": "boolean"
+            },
+            {
+              "name": "gui_range_display",
+              "type": {
+                    "type": "enum",
+                    "name": "RangeAlgo",
+                    "symbols": [
+                        "Rated",
+                        "Ideal"
+                    ]
+                },
+                "doc": "range estimation algorithm",
+                "symbolDocs": {
+                    "Rated": "rated range",
+                    "Ideal": "ideal range"
+                }            
+            }
+        ]"
+    }"
+}
+
+
+13 May 20:59:37 - { api_version: 3,
+  autopark_state: 'unavailable',
+  autopark_state_v2: 'unavailable',
+  calendar_supported: true,
+  car_type: 's',
+  car_version: '2.16.17',
+  center_display_state: 0,
+  dark_rims: false,
+  df: 0,
+  dr: 0,
+  exterior_color: 'Blue',
+  ft: 0,
+  has_spoiler: false,
+  locked: true,
+  notifications_supported: true,
+  odometer: 37059.267194,
+  parsed_calendar_supported: true,
+  perf_config: 'P1',
+  pf: 0,
+  pr: 0,
+  rear_seat_heaters: 0,
+  remote_start: false,
+  remote_start_supported: true,
+  rhd: false,
+  roof_color: 'None',
+  rt: 0,
+  seat_type: 0,
+  spoiler_type: 'None',
+  sun_roof_installed: 1,
+  sun_roof_percent_open: 0,
+  sun_roof_state: 'unknown',
+  third_row_seats: 'None',
+  valet_mode: false,
+  valet_pin_needed: true,
+  vehicle_name: 'SKIPGAS',
+  wheel_type: 'Silver21' }
